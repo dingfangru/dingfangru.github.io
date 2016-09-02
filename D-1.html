@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="bootstrap-3.3.5-dist\css\bootstrap.min.css"/>
+<link rel="stylesheet" href="bootstrap-3.3.5-dist\css\bootstrap.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css"/>
@@ -7,7 +7,8 @@
   <script src="js/jquery.color.js"></script>
 <style>
 body{
- font-family: "Microsoft YaHei";
+   font-family: "Microsoft YaHei";
+
 }
 .box{
   border-radius: 3px;
@@ -55,7 +56,7 @@ color:white;
 </style>
 
 <body class="ding" id="D">
-<div class=" col-lg-6 col-lg-offset-3 col-xs-12">
+<div class=" col-lg-6 col-lg-offset-3 ">
 <div class="box" id="text">
 <div class="box-text"><i id="icon" class="fa fa-quote-left ccc"></i>
 <span class="ccc" id="aaa"></span></div>
@@ -98,7 +99,7 @@ if(di) $('#icon').css('color',   color);
       success: function(data) {
 
 
-                        $(".ccc").fadeOut(500,function(){
+                    $(".ccc").fadeOut(500,function(){
 
                           $("#aaa").html(data.taici);
                            $("#bbb").html(data.source);
@@ -123,4 +124,3 @@ if(di) $('#icon').css('color',   color);
     });
   });
 </script>
-
